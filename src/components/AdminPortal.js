@@ -4,6 +4,7 @@ import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import * as XLSX from 'xlsx'; // Import xlsx library for handling Excel files
 import './AdminPortal.css'; // Import the CSS file for styling
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { useNavigate } from 'react-router-dom'; // for redirecting
 
 const AdminPanel = () => {
   const [complaints, setComplaints] = useState([]);
@@ -15,6 +16,10 @@ const AdminPanel = () => {
   const auth = getAuth();
 
   useEffect(() => {
+
+    const user = auth.currentUser;
+
+   
     const fetchComplaints = async () => {
       const db = getFirestore();
       const complaintsCollection = collection(db, 'complaints');

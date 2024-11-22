@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { auth, db } from "../firebase"; // Import from the firebase-config.js file
 import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
 import './UserPortal.css'; // Import the CSS file in your component
+import { useNavigate } from 'react-router-dom'; // for redirecting
 
 const UserPanel = () => {
   const [complaint, setComplaint] = useState(""); // Complaint input state
@@ -11,6 +12,9 @@ const UserPanel = () => {
 
   // Get user email from Firebase Auth (if logged in)
   useEffect(() => {
+    const user = auth.currentUser;
+
+  
     if (auth.currentUser) {
       setEmail(auth.currentUser.email);
     }
