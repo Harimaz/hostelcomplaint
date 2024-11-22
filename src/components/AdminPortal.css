@@ -1,0 +1,105 @@
+/* Admin Panel Container */
+.admin-panel-container {
+    background-color: #DFF2EB; /* Light Greenish */
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  h2 {
+    color: #4A628A; /* Dark Blue */
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+
+  }
+  
+  h3 {
+    color: #4A628A; /* Dark Blue */
+    margin-top: 40px;
+  }
+  
+  /* File Upload Section */
+  input[type="file"] {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  input[type="file"]:focus {
+    outline: none;
+    border: 2px solid #7AB2D3; /* Light Blue Border on Focus */
+  }
+  
+  button[type="button"] {
+    background-color: #4A628A; /* Orange */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for file upload button */
+  button[type="button"]:hover {
+    background-color: #4A628A;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #B9E5E8; /* Light Blue background for cards */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    color: #4A628A; /* Dark Blue for card titles */
+  }
+  
+  .card-body {
+    color: #4A628A; /* Dark Blue text color */
+  }
+  
+  .card-text {
+    color: #7AB2D3; /* Light Blue text for card content */
+  }
+  
+  .card-body .btn {
+    background-color: #E26C06; /* Button color inside cards */
+    border: none;
+    color: white;
+  }
+  
+  .card-body .btn:hover {
+    background-color: #d75f05;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #7AB2D3; /* Light Blue border */
+  }
+
+  /* Button for "View Details" */
+button {
+    background-color: #4A628A; /* Dark Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #7AB2D3; /* Light Blue on hover */
+  }
+  
+  

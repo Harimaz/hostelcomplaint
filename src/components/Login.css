@@ -1,0 +1,55 @@
+/* Container for the login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #DFF2EB; /* Light Greenish */
+  }
+  
+  /* Login box */
+  .login-box {
+    background-color: #B9E5E8; /* Light Blue */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Input fields */
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #7AB2D3; /* Light Blue */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Submit button */
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A628A; /* Dark Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  .login-box button:hover {
+    background-color: #3c4d65;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
